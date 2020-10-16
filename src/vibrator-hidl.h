@@ -39,6 +39,6 @@ protected:
     
 private:
     UHardwareVibrator m_device;
-    std::shared_ptr<std::thread> m_thread;
+    //std::shared_ptr<std::thread> m_thread;
 };
 }

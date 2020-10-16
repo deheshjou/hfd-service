@@ -39,6 +39,6 @@ protected:
     
 private:
     Udev::UdevDevice m_device;
-    std::shared_ptr<std::thread> m_thread;
+    //std::shared_ptr<std::thread> m_thread;
 };
 }

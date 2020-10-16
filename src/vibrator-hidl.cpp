@@ -37,9 +37,9 @@ VibratorHIDL::VibratorHIDL(): Vibrator() {
 
 VibratorHIDL::~VibratorHIDL()
 {
-    if (m_thread) {
+    /*if (m_thread) {
         m_thread->join();
-    }
+    }*/
 }
 
 void VibratorHIDL::configure(State state, int durationMs) {

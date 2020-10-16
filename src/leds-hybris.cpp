@@ -102,8 +102,8 @@ void LedsHybris::turnOn()
     int green = (m_color >> 8) & 0xFF;
     int blue = m_color & 0xFF;
     alpha = 0xff; //TODO: Support alpha
-    int newcolor = ((alpha & 0xff) << 24) + ((red & 0xff) << 16) + ((green & 0xff) << 8) + (blue & 0xff);
-    state.color = newcolor;
+    //int newcolor = ((alpha & 0xff) << 24) + ((red & 0xff) << 16) + ((green & 0xff) << 8) + (blue & 0xff);
+    state.color = ((alpha & 0xFF) << 24) | m_color;
     state.flashMode = LIGHT_FLASH_TIMED;
     state.flashOnMS = m_onMs;
     state.flashOffMS = m_offMs;
